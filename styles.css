@@ -19,7 +19,7 @@ body {
   height: 100%;
 
   display: grid;
-  grid-template-columns: 1.067fr 4fr;
+  grid-template-columns: 1.069fr 4fr;
   grid-template-rows: 158px 1fr;
 }
 
@@ -217,7 +217,70 @@ header {
 
 main {
   background-color: #E2E8F0;
+  padding-left: 17px;
+  padding-right: 29px;
+  padding-top: 28px;
+  padding-bottom: 40px;
 
   grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1.06fr;
+  gap: 20px;
+}
 
+main .svg-icon {
+  width: 21px;
+  margin-left: 22px;
+}
+
+.projects h2, 
+.side-column h2 {
+  padding-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.projects-container {
+  row-gap: 27px;
+  column-gap: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(3, 193px);
+}
+
+.project-item {
+  background-color: white;
+  border-radius: 7px;
+  border-left: 7px solid #F0B429;
+  padding-left: 20px;
+  padding-top: 29px;
+  padding-right: 23px;
+  padding-bottom: 20px;
+  box-shadow: 2px 4px 5px -1px rgba(7, 7, 7, 0.15);
+  z-index: 2;
+
+  display: grid;
+  grid-template-rows: 1fr 6fr 1fr;
+}
+
+.project-item h3 {
+  font-weight: bold;
+}
+
+.project-item p {
+  font-size: 0.85rem;
+  line-height: 1.2;
+  color: #707070; 
+  align-self: start;
+}
+
+.project-item .icons {
+  align-self: end;
+  justify-self: end;
+}
+
+
+.announcements,
+.trending {
+  background-color: white;
 }
